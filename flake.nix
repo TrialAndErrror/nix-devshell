@@ -6,8 +6,7 @@
     wade-shell.url = "github:TrialAndErrror/nix-devshell";
   };
 
-  outputs = { self, nixpkgs, wade-shell }:
-  in {
+  outputs = { self, nixpkgs, wade-shell }: {
       packages.x86_64-linux.default = self.wade-shell;
     };
 }
