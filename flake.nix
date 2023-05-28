@@ -1,6 +1,8 @@
 {
   description = "Wade's devshell flake";
 
+
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
   };
@@ -19,6 +21,8 @@
       packages = flake-utils.lib.flattenTree {
         inherit (pkgs) hello;
       };
+
+
 
       devShells.default = pkgs.mkShell {
         buildInputs =  [ 
