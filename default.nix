@@ -8,6 +8,7 @@
       neovim
       ripgrep
       lazygit
+      apostrophe
       gh
     ]; 
 
