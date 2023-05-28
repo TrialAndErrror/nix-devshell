@@ -10,6 +10,10 @@ inputs = {
     flake-utils.lib.eachDefaultSystem
       (system:
         {
+          apps.${system}.default = {
+            type = "app";
+            program = "ECHO Hello World!";
+          };
 
           # devShells.default = nixpkgs.mkShell {
           #   buildInputs =  [ 
