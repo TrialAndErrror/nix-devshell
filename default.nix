@@ -1,9 +1,5 @@
 { pkgs ? import <nixpkgs> {}}:
-let 
-  myScript = pkgs.writeScriptBin "astro" ''
-    git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-  '';
-  in pkgs.mkShell {
+  pkgs.mkShell {
     buildInputs = with pkgs; [ 
       git
       python3
@@ -12,6 +8,7 @@ let
       neovim
       ripgrep
       lazygit
+      gh
     ]; 
 
     shellHook = ''
