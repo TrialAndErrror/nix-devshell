@@ -22,8 +22,6 @@
         inherit (pkgs) hello;
       };
 
-
-
       devShells.default = pkgs.mkShell {
         buildInputs =  [ 
           pkgs.git
@@ -36,5 +34,6 @@
           pkgs.gh
         ];
       };
+
     });
 }
