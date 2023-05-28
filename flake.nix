@@ -2,38 +2,28 @@
   description = "Wade's devshell flake";
 
 
-
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
-
-  outputs = {
-    self,
-    nixpkgs,
-    flake-utils,
-  }:
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem
-    (system: let
-      pkgs = import nixpkgs {
-        inherit system;
-      };
-    in {
-      packages = flake-utils.lib.flattenTree {
-        inherit (pkgs) hello;
-      };
+      (system:
+        {
 
-      devShells.default = pkgs.mkShell {
-        buildInputs =  [ 
-          pkgs.git
-          pkgs.python3
-          pkgs.sublime
-          pkgs.firefox
-          pkgs.neovim
-          pkgs.ripgrep
-          pkgs.lazygit
-          pkgs.gh
-        ];
-      };
+          # devShells.default = nixpkgs.mkShell {
+          #   buildInputs =  [ 
+          #     nixpkgs.git
+          #     nixpkgs.python3
+          #     nixpkgs.sublime
+          #     nixpkgs.firefox
+          #     nixpkgs.neovim
+          #     nixpkgs.ripgrep
+          #     nixpkgs.lazygit
+          #     nixpkgs.gh
+          #   ];
+          # };
+        }
+      );
+    }
 
-    });
-}
