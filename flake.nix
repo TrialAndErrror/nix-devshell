@@ -8,8 +8,8 @@
       (system:
         let pkgs = nixpkgs.legacyPackages.${system}; in
         {
-          config.allowUnfree = true;
           devShells.default = import ./default.nix { inherit pkgs; };
+          packages.${system}.default = nixpkgs.${system}.git;
         }
       );
 }
