@@ -5,12 +5,14 @@
       gh
 
       python3
+      rustup
       
       sublime
       neovim
       
       ripgrep
       lazygit
+      lazydocker
     ]; 
 
     shellHook = ''
