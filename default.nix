@@ -17,14 +17,14 @@
       echo "Welcome to Wade's Nix shell!"
       echo "You have access to: 
       git
-      github cli (gh)."
+      github cli (gh)
 
       python3 (3.10.11)
       
       sublime
-      neovim (nvim)
+      nvim: neovim
       
       ripgrep
-      lazygit
+      lazygit"
     '';
 }
