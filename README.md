@@ -7,7 +7,7 @@ It also doesn't have inherent support for unfree packages, so you need to have a
 
 ### If you have a Nix Config file that allows unfree packages:
 ```
-nix develop --impure 'github:TrialAndErrror/nix-devshell'"
+nix develop --impure 'github:TrialAndErrror/nix-devshell'
 ```
 
 ### If you don't have a Nix Config file:
