@@ -6,6 +6,11 @@
 
       python3
       rustup
+      nodejs
+      yarn
+
+      black
+      nodePackages.prettier
       
       sublime
       neovim
@@ -22,6 +27,12 @@
       github cli (gh)
 
       python3 (3.10.11)
+      rustup
+      nodejs
+      yarn
+
+      black
+      prettier
       
       sublime
       nvim: neovim
