@@ -9,7 +9,7 @@
         let pkgs = nixpkgs.legacyPackages.${system}; in
         {
           devShells.default = import ./default.nix { inherit pkgs; };
-          packages.${system}.default = nixpkgs.${system}.git;
+          # packages.${system}.default = nixpkgs.${system}.git;
         }
       );
 }
