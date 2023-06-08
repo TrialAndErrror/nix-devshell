@@ -15,6 +15,7 @@
       sublime
       neovim
       
+      tmux
       ripgrep
       lazygit
       lazydocker
@@ -28,11 +29,11 @@
       echo " \ \____-  \ \_____\  \ \__|    \/\_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\ ";
       echo "  \/____/   \/_____/   \/_/      \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_____/ ";
       echo "                                                                                      ";
-      echo "You have access to the following: 
       
       git
       github cli (gh)
-
+      lazygit
+      
       python3 (3.10.11)
       black
 
@@ -45,7 +46,9 @@
       sublime
       nvim (vanilla neovim)
       
+      tmux
       ripgrep
-      lazygit"
+      lazydocker
+      "
     '';
 }
