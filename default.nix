@@ -21,21 +21,29 @@
     ]; 
 
     shellHook = ''
-      echo "Welcome to Wade's Nix shell!"
-      echo "You have access to: 
+      # Header
+      echo " _____     ______     __   __   ______     __  __     ______     __         __        ";
+      echo "/\  __-.  /\  ___\   /\ \ / /  /\  ___\   /\ \_\ \   /\  ___\   /\ \       /\ \       ";
+      echo "\ \ \/\ \ \ \  __\   \ \ \'/   \ \___  \  \ \  __ \  \ \  __\   \ \ \____  \ \ \____  ";
+      echo " \ \____-  \ \_____\  \ \__|    \/\_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\ ";
+      echo "  \/____/   \/_____/   \/_/      \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_____/ ";
+      echo "                                                                                      ";
+      echo "You have access to the following: 
+      
       git
       github cli (gh)
 
       python3 (3.10.11)
+      black
+
       rustup
+      
       nodejs
       yarn
-
-      black
       prettier
       
       sublime
-      nvim: neovim
+      nvim (vanilla neovim)
       
       ripgrep
       lazygit"
