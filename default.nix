@@ -3,6 +3,7 @@
     buildInputs = with pkgs; [ 
       git
       gh
+      lazygit
 
       python3
       rustup
@@ -12,12 +13,9 @@
       black
       nodePackages.prettier
       
-      sublime
       neovim
-      
       tmux
       ripgrep
-      lazygit
       lazydocker
     ]; 
 
@@ -28,6 +26,7 @@
       echo " \ \____-  \ \_____\  \ \__|    \/\_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\ ";
       echo "  \/____/   \/_____/   \/_/      \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_____/ ";
       echo "                                                                                      ";
+      
       echo "
       git
       github cli (gh)
@@ -42,9 +41,7 @@
       yarn
       prettier
       
-      sublime
       nvim (vanilla neovim)
-      
       tmux
       ripgrep
       lazydocker
