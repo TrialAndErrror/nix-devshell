@@ -13,7 +13,7 @@
       black
       nodePackages.prettier
       
-      neovim
+      # neovim
       tmux
       ripgrep
       lazydocker
