@@ -15,6 +15,8 @@
   in {
     config.allowUnfree = true;
     # devShells.default = import ./default.nix { inherit pkgs; };
+
+    defaultPackage.x86_64-linux = editor.packages.x86_64-linux.default;
     devShells.${system}.default =
       pkgs.mkShell
       {
