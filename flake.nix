@@ -49,8 +49,7 @@
           gitui # lazygit replacement
 
           # include neovim-flake
-          editor.packages.x86_64-linux.default
-          # editor.devShells.default
+          # editor.packages.x86_64-linux.default
         ];
         shellHook = ''
           alias ls=exa;
