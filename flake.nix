@@ -49,13 +49,11 @@
           gitui # lazygit replacement
 
           # include neovim-flake
-          editor.packages.x86_64-linux.default
-          # editor.devShells.default
+          # editor.packages.x86_64-linux.default
         ];
         shellHook = ''
-          alias ls=exa;
-          alias cat=bat;
-
+           
+          alias ls="exa -lha@ --git";
           echo " _____     ______     __   __   ______     __  __     ______     __         __        ";
           echo "/\  __-.  /\  ___\   /\ \ / /  /\  ___\   /\ \_\ \   /\  ___\   /\ \       /\ \       ";
           echo "\ \ \/\ \ \ \  __\   \ \ \'/   \ \___  \  \ \  __ \  \ \  __\   \ \ \____  \ \ \____  ";
