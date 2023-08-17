@@ -1,22 +1,22 @@
 {
   description = "Wade's devshell flake";
 
-  inputs = {
-    editor.url = "github:TrialAndErrror/neovim-flake";
-  };
-
   outputs = {
     self,
     nixpkgs,
-    editor,
   }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
+    packages.x86_64-linux.default = pkgs.nushell;
     devShells.${system}.default =
       pkgs.mkShell
       {
         buildInputs = with pkgs; [
+          # Like a shell, but better
+          nushell
+
+          # Git tools
           git
           gh
 
@@ -52,7 +52,7 @@
           # editor.packages.x86_64-linux.default
         ];
         shellHook = ''
-           
+
           alias ls="exa -lha@ --git";
           echo " _____     ______     __   __   ______     __  __     ______     __         __        ";
           echo "/\  __-.  /\  ___\   /\ \ / /  /\  ___\   /\ \_\ \   /\  ___\   /\ \       /\ \       ";
