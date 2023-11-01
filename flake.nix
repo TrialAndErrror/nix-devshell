@@ -39,6 +39,7 @@
           exa # better ls
           du-dust # disk usage
           bat # syntax highlighting on cat
+          btop
 
           zellij # better tmux
           mprocs # monitor long running processes
